@@ -32,6 +32,10 @@
       background:rgba(0,0,0,0.55);
     }
     header > * {position:relative; z-index:1;}
+    header img {
+      height:70px;
+      margin-bottom:1rem;
+    }
     header h1 {
       font-size:clamp(2.5rem,6vw,4rem);
       font-weight:800;
@@ -79,6 +83,19 @@
       margin-bottom:1em;
       text-align:center;
       color:#111827;
+      position:relative;
+      display:inline-block;
+    }
+    section h2::after {
+      content:"";
+      position:absolute;
+      left:50%;
+      bottom:-6px;
+      transform:translateX(-50%);
+      width:60px;
+      height:3px;
+      background:#2563eb;
+      border-radius:2px;
     }
     section p {
       text-align:center;
@@ -96,10 +113,14 @@
       border:1px solid #e5e7eb;
       border-radius:8px;
       padding:2rem;
-      transition:box-shadow 0.2s ease;
+      transition:box-shadow 0.2s ease, transform 0.2s ease;
       text-align:center;
     }
-    .card:hover {box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+    .card:hover {
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      border-color:#2563eb;
+      transform:translateY(-4px);
+    }
     .card h3 {margin-bottom:0.5em; color:#2563eb;}
     .card p {color:#4b5563;}
 
@@ -107,16 +128,17 @@
     footer {
       text-align:center;
       padding:2em 1em;
-      background:#f3f4f6;
-      color:#6b7280;
+      background:#111827;
+      color:#9ca3af;
       font-size:0.9rem;
-      border-top:1px solid #e5e7eb;
+      border-top:1px solid #1f2937;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="TIM CHEESE INDUSTRIES.png" alt="Tim Cheese Industries Logo">
   <h1>Tim Cheese Industries</h1>
   <h2>Innovating Technology for a Smarter Tomorrow</h2>
   <div class="cta">

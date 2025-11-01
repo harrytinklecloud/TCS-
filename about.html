@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About — Tim Cheese Industries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background:#ffffff;
+      color:#111827;
+      line-height:1.6;
+    }
+
+    /* Hero */
+    .hero {
+      background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      min-height:50vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+      color:#fff;
+      padding:2rem;
+    }
+    .hero::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    .hero > * {position:relative; z-index:1;}
+    .hero img {
+      height:70px;
+      margin-bottom:1rem;
+    }
+    .hero h1 {
+      font-size:clamp(2rem,5vw,3rem);
+      font-weight:800;
+    }
+
+    section {
+      padding:8vh 5vw;
+      max-width:1100px;
+      margin:auto;
+    }
+    section h2 {
+      font-size:1.8rem;
+      margin-bottom:1rem;
+      text-align:center;
+      position:relative;
+      display:inline-block;
+    }
+    section h2::after {
+      content:"";
+      position:absolute;
+      left:50%;
+      bottom:-6px;
+      transform:translateX(-50%);
+      width:60px;
+      height:3px;
+      background:#2563eb;
+      border-radius:2px;
+    }
+    .two-col {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:2rem;
+      align-items:center;
+      margin-top:2rem;
+    }
+    .two-col img {
+      width:100%;
+      border-radius:8px;
+    }
+    .two-col p {
+      color:#374151;
+    }
+
+    .values {
+      display:grid;
+      gap:2rem;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      margin-top:2rem;
+    }
+    .card {
+      border:1px solid #e5e7eb;
+      border-radius:8px;
+      padding:2rem;
+      text-align:center;
+      transition:box-shadow 0.2s ease;
+    }
+    .card:hover {box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+    .card h3 {margin-bottom:0.5em; color:#2563eb;}
+
+    footer {
+      text-align:center;
+      padding:2em 1em;
+      background:#111827;
+      color:#9ca3af;
+      font-size:0.9rem;
+      margin-top:4rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="TIM CHEESE INDUSTRIES.png" alt="Tim Cheese Industries Logo">
+  <h1>About Tim Cheese Industries</h1>
+</div>
+
+<section>
+  <h2>Our Story</h2>
+  <div class="two-col">
+    <p>
+      Founded with a vision of clarity and empowerment, Tim Cheese Industries is a modern technology company dedicated to building tools that feel as intuitive as they are powerful. 
+      From communication platforms to privacy‑first systems, we design with people at the center.
+    </p>
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Team working together">
+  </div>
+</section>
+
+<section>
+  <h2>Our Mission</h2>
+  <div class="two-col">
+    <img src="https://images.unsplash.com/photo-1581090700227-4c4f50b1d1f4?auto=format&fit=crop&w=1200&q=80" alt="Modern workspace">
+    <p>
+      We believe technology should simplify, not overwhelm. Our mission is to deliver solutions that are clean, resilient, and empowering — giving students, creators, and innovators the confidence to focus on what matters most.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Our Values</h2>
+  <div class="values">
+    <div class="card">
+      <h3>🔒 Privacy</h3>
+      <p>We build systems that protect users first, ensuring data stays safe and under their control.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Design</h3>
+      <p>Every interaction matters. We obsess over clarity, polish, and joy in the user experience.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Innovation</h3>
+      <p>We push boundaries with practical, forward‑thinking solutions that adapt to real needs.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Looking Ahead</h2>
+  <p style="text-align:center; max-width:700px; margin:auto; color:#374151;">
+    Our upcoming flagship project, <strong>OSPRY.ai</strong>, embodies our philosophy: precision, adaptability, and vision. 
+    It’s the next step in our journey to make technology more human‑centered and empowering.
+  </p>
+</section>
+
+<footer>
+  © 2025 Tim Cheese Industries — Innovating Technology, Empowering People
+</footer>
+
+</body>
+</html>

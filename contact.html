@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact — Tim Cheese Industries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background:#ffffff;
+      color:#111827;
+      line-height:1.6;
+    }
+
+    /* Hero */
+    .hero {
+      background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      min-height:40vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+      color:#fff;
+      padding:2rem;
+    }
+    .hero::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    .hero > * {position:relative; z-index:1;}
+    .hero img {
+      height:70px;
+      margin-bottom:1rem;
+    }
+    .hero h1 {
+      font-size:clamp(2rem,5vw,3rem);
+      font-weight:800;
+    }
+
+    section {
+      padding:8vh 5vw;
+      max-width:800px;
+      margin:auto;
+    }
+    section h2 {
+      font-size:1.8rem;
+      margin-bottom:1rem;
+      text-align:center;
+      position:relative;
+      display:inline-block;
+    }
+    section h2::after {
+      content:"";
+      position:absolute;
+      left:50%;
+      bottom:-6px;
+      transform:translateX(-50%);
+      width:60px;
+      height:3px;
+      background:#2563eb;
+      border-radius:2px;
+    }
+    section p {
+      text-align:center;
+      max-width:600px;
+      margin:0 auto 2rem;
+      color:#374151;
+    }
+
+    form {
+      display:grid;
+      gap:1rem;
+      margin-top:2rem;
+    }
+    input, textarea {
+      padding:0.8rem;
+      border:1px solid #d1d5db;
+      border-radius:6px;
+      font-size:1rem;
+      width:100%;
+    }
+    input:focus, textarea:focus {
+      outline:none;
+      border-color:#2563eb;
+      box-shadow:0 0 0 2px rgba(37,99,235,0.2);
+    }
+    button {
+      background:#2563eb;
+      color:#fff;
+      border:none;
+      padding:0.9rem;
+      border-radius:6px;
+      font-weight:600;
+      cursor:pointer;
+      transition:background 0.2s ease;
+    }
+    button:hover {background:#1d4ed8;}
+
+    footer {
+      text-align:center;
+      padding:2em 1em;
+      background:#111827;
+      color:#9ca3af;
+      font-size:0.9rem;
+      margin-top:4rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="TIM CHEESE INDUSTRIES.png" alt="Tim Cheese Industries Logo">
+  <h1>Contact Us</h1>
+</div>
+
+<section>
+  <h2>Get in Touch</h2>
+  <p>
+    We’d love to hear from you. Whether you’re interested in collaborating, partnering, or just learning more about our work, reach out below.
+  </p>
+
+  <form action="mailto:dacatpoos@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p style="margin-top:2rem; text-align:center;">
+    Or email us directly at <a href="mailto:dacatpoos@gmail.com" style="color:#2563eb;">dacatpoos@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  © 2025 Tim Cheese Industries — Innovating Technology, Empowering People
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tim Cheese Industries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background:#ffffff;
+      color:#111827;
+      line-height:1.6;
+    }
+
+    /* Hero */
+    header {
+      min-height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0 5vw;
+      background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      position:relative;
+    }
+    header::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    header > * {position:relative; z-index:1;}
+    header h1 {
+      font-size:clamp(2.5rem,6vw,4rem);
+      font-weight:800;
+      margin-bottom:0.5em;
+      color:#fff;
+    }
+    header h2 {
+      font-size:clamp(1.2rem,3vw,1.8rem);
+      font-weight:300;
+      color:#e5e7eb;
+      margin-bottom:1.5em;
+    }
+    .cta {
+      display:flex;
+      gap:1rem;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .cta a {
+      padding:0.9em 1.8em;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+      transition:all 0.2s ease;
+    }
+    .btn-primary {
+      background:#2563eb;
+      color:#fff;
+    }
+    .btn-primary:hover {background:#1d4ed8;}
+    .btn-outline {
+      border:2px solid #fff;
+      color:#fff;
+    }
+    .btn-outline:hover {background:rgba(255,255,255,0.1);}
+
+    /* Sections */
+    section {
+      padding:8vh 5vw;
+      max-width:900px;
+      margin:auto;
+    }
+    section h2 {
+      font-size:clamp(1.8rem,4vw,2.5rem);
+      margin-bottom:1em;
+      text-align:center;
+      color:#111827;
+    }
+    section p {
+      text-align:center;
+      max-width:700px;
+      margin:auto;
+      color:#374151;
+    }
+    .grid {
+      display:grid;
+      gap:2rem;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      margin-top:2rem;
+    }
+    .card {
+      border:1px solid #e5e7eb;
+      border-radius:8px;
+      padding:2rem;
+      transition:box-shadow 0.2s ease;
+      text-align:center;
+    }
+    .card:hover {box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+    .card h3 {margin-bottom:0.5em; color:#2563eb;}
+    .card p {color:#4b5563;}
+
+    /* Footer */
+    footer {
+      text-align:center;
+      padding:2em 1em;
+      background:#f3f4f6;
+      color:#6b7280;
+      font-size:0.9rem;
+      border-top:1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tim Cheese Industries</h1>
+  <h2>Innovating Technology for a Smarter Tomorrow</h2>
+  <div class="cta">
+    <a href="#about" class="btn-primary">Discover More</a>
+    <a href="#contact" class="btn-outline">Get in Touch</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Tim Cheese Industries is a modern technology company focused on building practical, forward‑thinking solutions. 
+    We specialize in clean design, resilient systems, and tools that empower people in education, communication, and beyond.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>📱 Communication Platforms</h3>
+      <p>Private, student‑friendly chat systems with iMessage‑level clarity and polish.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 UI/UX Innovation</h3>
+      <p>Interfaces that blend joy and simplicity — from animated buttons to seamless sign‑in flows.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Privacy‑First Tools</h3>
+      <p>Resilient systems designed to protect users while keeping experiences smooth.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ospry">
+  <h2>Upcoming Project: OSPRY.ai</h2>
+  <p>
+    OSPRY.ai is our next leap forward — a precision‑focused, privacy‑first AI platform designed to simplify complexity and empower users. 
+    Built for adaptability and clarity, OSPRY.ai represents the future of intelligent, human‑centered technology.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Join Us</h2>
+  <p>
+    Want to collaborate, partner, or learn more about our innovations? 
+    Reach out and let’s build the future together.
+  </p>
+  <div class="cta" style="margin-top:2em;">
+    <a href="mailto:dacatpoos@gmail.com" class="btn-primary">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Tim Cheese Industries — Innovating Technology, Empowering People
+</footer>
+
+</body>
+</html>
